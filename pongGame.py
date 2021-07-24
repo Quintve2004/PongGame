@@ -34,7 +34,7 @@ paddleB.shapesize(stretch_wid=5, stretch_len=1)
 # ball
 ball = turtle.Turtle()
 ball.shape("circle")
-ball.color("white")
+ball.color("blue")
 ball.speed(0)
 ball.penup()
 
