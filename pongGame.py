@@ -13,6 +13,21 @@ wn.tracer(0)
 scoreA = 0
 scoreB = 0
 
+# Middle Circle
+circle = turtle.Turtle()
+circle.speed(0)
+circle.penup()
+circle.color("white")
+circle.shape("circle")
+circle.shapesize(stretch_wid=2, stretch_len=2)
+
+# Dotted Line
+dottedLine = turtle.Turtle()
+dottedLine.speed(0)
+dottedLine.penup()
+dottedLine.shapesize(stretch_wid=100, stretch_len=0.2)
+dottedLine.color("white")
+
 # paddleA
 paddleA = turtle.Turtle()
 paddleA.speed(0)
@@ -20,7 +35,7 @@ paddleA.color("white")
 paddleA.shape("square")
 paddleA.penup()
 paddleA.goto(-350, 0)
-paddleA.shapesize(stretch_wid=5, stretch_len=1)
+paddleA.shapesize(stretch_wid=5, stretch_len=0.5)
 
 # paddleB
 paddleB = turtle.Turtle()
@@ -29,12 +44,12 @@ paddleB.color("white")
 paddleB.shape("square")
 paddleB.penup()
 paddleB.goto(350, 0)
-paddleB.shapesize(stretch_wid=5, stretch_len=1)
+paddleB.shapesize(stretch_wid=5, stretch_len=0.5)
 
 # ball
 ball = turtle.Turtle()
 ball.shape("circle")
-ball.color("blue")
+ball.color("white")
 ball.speed(0)
 ball.penup()
 
